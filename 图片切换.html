@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+	<title></title>
+	<script type="text/javascript" src = "pictureChange.js" ></script>
+    <script type="text/javascript" src = "tool.js"></script>
+	<style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+	}
+		#outer{
+			width: 310px;
+			height: 202px;
+			/*background-color: greenyellow;*/
+			margin: 50px auto;
+			padding: 10px 0;
+			position: relative;
+        	overflow: hidden;  /*裁剪溢出的内容，这样页面中只显示一张图片*/
+            }
+
+        #imgList{
+            list-style: none;
+        	position: absolute;
+        	left: -323px;
+             }
+
+        #imgList li{
+        	float: left;
+        	margin: 0 10px;
+        }
+
+        #navDiv{
+        	position: absolute;/* 超链接块元素设置定位，可以显示在图片上，兄弟元素*/
+            bottom: 15px;  
+        }
+
+        #navDiv a{
+        	width: 15px;
+        	height: 15px;
+            float: left;  /*设置超链接浮动，内联元素就会变成块元素*/
+            background-color: #5c9618;
+            margin: 0 10px;
+            opacity: 0.7;
+            filter: alpha(opacity = 50);/*为IE8浏览器设置透明度兼容性*/
+        }
+       /* #navDiv a:hover{
+        	background-color: pink;
+        }*/
+
+	</style>
+	
+</head>
+<body>
+
+<div id="outer">
+<ul id="imgList">
+<li><img src="../img/1.png"/></li>
+<li><img src="../img/2.png"/></li>
+<li><img src="../img/3.png"/></li>
+<li><img src="../img/4.png"/></li>
+<li><img src="../img/5.png"/></li>
+<li><img src="../img/1.png"/></li>
+
+</ul>
+
+<div id="navDiv">
+	<a href="javascript:;"></a>
+	<a href="javascript:;"></a>
+	<a href="javascript:;"></a>
+	<a href="javascript:;"></a>
+	<a href="javascript:;"></a>
+
+</div>
+</div>
+</body>
+</html>
